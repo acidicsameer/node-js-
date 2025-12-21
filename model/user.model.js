@@ -1,15 +1,16 @@
 import mongoose from "mongoose";
 import { Schema } from "mongoose";
 const UserModel = mongoose.Schema({
-  UserName: {
+  name: {
     type: String,
     required: [true, "Username must be provided "],
   },
-  UserEmail: {
-    type: String,
-    unique: true,
+  email: {
+    type: String, 
+  
+  
   },
-  UserPassword: {
+  password: {
     type: String,
   },
 }); 
